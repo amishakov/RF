@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Risk First" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.3ecb0cf0.css">
-<script src="/assets/js/runtime~main.e7734bec.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.537e8544.js" defer="defer"></script>
 <script src="/assets/js/main.ae6b2288.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -26,7 +26,7 @@
 <li><strong>UAT</strong>: they put the code into a User Acceptance Test (UAT) environment and user(s) test it.</li>
 <li>All being well, the code is <strong>Released to Production</strong>.</li>
 </ol>
-<p><img decoding="async" loading="lazy" alt="A Simple Development Process" src="/assets/images/development_process_1-f33bb0ae9c8c1c69aeaf457e2c582a44.png" width="1184" height="335" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="A Simple Development Process" src="/assets/images/development_process_1-8dd8b338a21570f1f25b1871b8d6f630.png" width="1063" height="331" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="cant-we-improve-this">Can&#x27;t We Improve This?<a href="#cant-we-improve-this" class="hash-link" aria-label="Direct link to Can&#x27;t We Improve This?" title="Direct link to Can&#x27;t We Improve This?">​</a></h3>
 <p>Is this a <em>good</em> process?  Probably, it&#x27;s not that great: you could add code review, a pilot phase, integration testing, whatever.</p>
 <p>Also, the <em>methodology</em> being used might be Waterfall, it might be Agile.  We&#x27;re not going to commit to specifics at this stage.</p>
@@ -45,7 +45,7 @@
 <ol>
 <li>Developer gets wind of new idea from user, logs onto production and changes some code directly.</li>
 </ol>
-<p><img decoding="async" loading="lazy" alt="A Dangerous Development Process" src="/assets/images/development_process_2-2472788ebc1bd04f717bac00ae8f133c.png" width="1200" height="335" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="A Dangerous Development Process" src="/assets/images/development_process_2-0c97f2a417d75bbb9ad407fde0376e49.png" width="1200" height="331" class="img_ev3q"></p>
 <p>We can all see this might end in disaster, but why?</p>
 <p>Two reasons:</p>
 <ol>
@@ -61,7 +61,7 @@
 <li>Actually, this functionality is mainly served by <strong>Feature Z</strong>...</li>
 <li>which is already there but hard to find.</li>
 </ul>
-<p><img decoding="async" loading="lazy" alt="Development Process - Exposing Hidden Risks" src="/assets/images/development_process_3-7ba2c0047560ff1ea306867b1dac99e8.png" width="1108" height="547" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Development Process - Exposing Hidden Risks" src="/assets/images/development_process_3-6706f6b83fe8c4450e22a5a2c5fa1043.png" width="1087" height="641" class="img_ev3q"></p>
 <p>The diagram above shows how this plays out.</p>
 <p>This is a slightly contrived example, as you&#x27;ll see.  But let&#x27;s follow our feature through the process and see how it meets reality slowly, and the <a href="/thinking/Glossary#hidden-risk">Hidden Risks</a> are discovered:</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="specification">Specification<a href="#specification" class="hash-link" aria-label="Direct link to Specification" title="Direct link to Specification">​</a></h3>
@@ -82,7 +82,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="code-and-unit-test">Code And Unit Test<a href="#code-and-unit-test" class="hash-link" aria-label="Direct link to Code And Unit Test" title="Direct link to Code And Unit Test">​</a></h3>
 <p>The next stage for our feature, <strong>Feature X</strong> is that it gets coded and some tests get written.  Let&#x27;s look at how our <a href="/thinking/Glossary#Goal-In-Mind">Goal In Mind</a> meets a new reality:   this time it&#x27;s the reality of a pre-existing codebase, which has it&#x27;s own internal logic.</p>
 <p>As the developer begins coding the feature in the software, they will start with an <a href="/thinking/Glossary#Internal-Model">Internal Model</a> of the software, and how the code fits into it.  But, in the process of implementing it, they are likely to learn about the codebase, and their <a href="/thinking/Glossary#Internal-Model">Internal Model</a> will develop.</p>
-<p><img decoding="async" loading="lazy" alt="Coding Process:  exposing more hidden risks as you code" src="/assets/images/development_process_code-910740a8de52334252c7b96901078689.png" width="1200" height="599" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Coding Process:  exposing more hidden risks as you code" src="/assets/images/development_process_code-500dc34f529e97d167dbf05695ed540a.png" width="1200" height="640" class="img_ev3q"></p>
 <p>At this point, let&#x27;s review the visual grammar of the diagram above.  Here, we&#x27;re showing how the balance of risks will change if the developer <a href="/thinking/Glossary#taking-action">Takes Action</a> and writes some code.  On the left, we have the current state of the world, on the right is the anticipated state <em>after</em> taking the action.</p>
 <p>The round-cornered rectangles represent our <a href="/thinking/Glossary#internal-model">Internal Model</a>, and these contain our view of <a href="/thinking/Glossary#Risk">Risk</a>, whether the risks we face right now, or the <a href="/thinking/Glossary#attendant-risk">Attendant Risks</a> expected after taking the action.  We&#x27;re not at the stage where taking this actions is <em>completing</em> the goal.  In fact, arguably, we&#x27;re facing <em>worse</em> risks after taking action than before, since we now have <em>development difficulties</em> to contend with!</p>
 <p>But at least, taking the action of &quot;coding and unit testing&quot; is expected to mitigate the risk of &quot;Duplicating Functionality&quot;.</p>
@@ -90,7 +90,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="integration">Integration<a href="#integration" class="hash-link" aria-label="Direct link to Integration" title="Direct link to Integration">​</a></h3>
 <p>Integration is where we run <em>all</em> the tests on the project, and compile <em>all</em> the code in a clean environment, collecting together the work from the whole development team.</p>
 <p>So, this stage is about meeting a new reality: the clean build.</p>
-<p><img decoding="async" loading="lazy" alt="Integration testing exposes Hidden Risks before you get to production" src="/assets/images/development_process_integration-2d0d1b7156bea69aee8a6d2063ac13c7.png" width="1200" height="599" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Integration testing exposes Hidden Risks before you get to production" src="/assets/images/development_process_integration-9cc8c2afec59256ee6bd73a14bd3a649.png" width="1200" height="640" class="img_ev3q"></p>
 <p>As shown in the diagram above, at this stage we might discover the <a href="/thinking/Glossary#Hidden-Risk">Hidden Risk</a> that we&#x27;d break <strong>Feature Y</strong></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="user-acceptance-test">User Acceptance Test<a href="#user-acceptance-test" class="hash-link" aria-label="Direct link to User Acceptance Test" title="Direct link to User Acceptance Test">​</a></h3>
 <p>Next, User Acceptance Testing (UAT) is where our new feature meets another reality: <em>actual users</em>.   I think you can see how the process works by now.  We&#x27;re just flushing out yet more <a href="/thinking/Glossary#hidden-risk">Hidden Risks</a>.</p>
