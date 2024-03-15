@@ -650,10 +650,10 @@ font-style: italic;
 --kite9-min-width: 70pt;
 --kite9-horizontal-sizing: MINIMIZE;
 --kite9-vertical-sizing: MINIMIZE;
---kite9-margin-top: 0px;
---kite9-margin-right: 0px;
---kite9-margin-bottom: 0px;
---kite9-margin-left: 0px;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
 --kite9-vertical-align: BOTTOM;
 }
 
@@ -697,16 +697,16 @@ fill: white;
 --kite9-padding-right: 0pt;
 --kite9-padding-bottom: 0pt;
 --kite9-padding-left: 0pt;
---kite9-margin-top: 0pt;
---kite9-margin-right: 0pt;
---kite9-margin-bottom: 0pt;
---kite9-margin-left: 0pt;
+--kite9-margin-top: 3pt;
+--kite9-margin-right: 3pt;
+--kite9-margin-bottom: 3pt;
+--kite9-margin-left: 3pt;
 stroke: rgb(245, 245, 245);
 stroke-width: 7pt;
 --kite9-horizontal-sizing: MAXIMIZE;
 --kite9-vertical-sizing: MAXIMIZE;
---kite9-min-width: 1200px;
---kite9-min-height: 675px;
+--kite9-min-width: 1000pt;
+--kite9-min-height: 535pt;
 }
 
 *[k9-elem="group"].principle-left-top {
@@ -819,8 +819,8 @@ font-style: italic;
 
 *[k9-texture="none"] {
 fill: white;
-fill-opacity: 0.01;
-stroke-opacity: 0.01;
+fill-opacity: 1.0E-4;
+stroke-opacity: 1.0E-4;
 }
 
 *[k9-texture="background"] {
@@ -837,7 +837,7 @@ fill-opacity: 1;
 
 *[k9-texture~="outline"] {
 fill: white;
-fill-opacity: 0.01;
+fill-opacity: 1.0E-4;
 stroke: black;
 stroke-opacity: 1;
 }
@@ -1108,7 +1108,7 @@ font-size: 12pt;
 
 *[k9-texture="artifact"] {
 fill: white;
-fill-opacity: 0.01;
+fill-opacity: 1.0E-4;
 stroke: none;
 }
 
@@ -1127,19 +1127,7 @@ font-weight: 200;
 --kite9-direction: RIGHT;
 }
 
-*[k9-elem="label-inner"] &gt; g &gt; *[k9-elem="caption"] {
---kite9-padding-top: 0;
---kite9-padding-right: 0;
---kite9-padding-bottom: 0;
---kite9-padding-left: 0;
-}
-
-*[k9-elem="label-inner"] {
-stroke: none;
-font-size: 12pt;
-}
-
-*[k9-elem="caption"] text {
+*[k9-elem="caption"] {
 text-align: center;
 }
 
@@ -1208,7 +1196,7 @@ stroke-width: 1pt;
 }
 
 *[k9-elem="container"][k9-texture="background"] {
-fill-opacity: 0.01;
+fill-opacity: 1.0E-4;
 }
 
 *[k9-elem="planner-cell"], *[k9-elem="planner-header"] {
@@ -1432,12 +1420,13 @@ stroke-width: 1pt;
               xlink:type="simple"
               id="adl:markup"
               xlink:show="other"
-              type="text/xml;purpose=adl;base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGRpYWdyYW0geG1sbnM9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS9hZGwiCiAgICAgICAgIHhtbG5zOnhzbHQ9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS94c2x0IgogICAgICAgICBpZD0iZGlhIgogICAgICAgICB4c2x0OnRlbXBsYXRlPSIvcHVibGljL3RlbXBsYXRlcy9yaXNrLWZpcnN0L3Jpc2stZmlyc3QtdGVtcGxhdGUueHNsIj4KICAgPGNvbnRhaW5lciBib3JkZXJlZD0idHJ1ZSIgaWQ9ImMiPgogICAgICA8cmlzayBjbGFzcz0iZ29hbCIgaWQ9ImlkXzAiPkZlYXR1cmUgWDwvcmlzaz4KICAgICAgPGxhYmVsIGlkPSJpZF8xNiI+CiAgICAgICAgSW50ZXJuYWwgTW9kZWwKICAgICAgICAKICAgICAgPC9sYWJlbD4KICAgPC9jb250YWluZXI+CiAgIDxhY3Rpb24+U3BlY2lmaWNhdGlvbjwvYWN0aW9uPgogICA8YWN0aW9uPkNvZGUgYW5kIFVuaXQgVGVzdDwvYWN0aW9uPgogICA8YWN0aW9uPkludGVncmF0aW9uPC9hY3Rpb24+CiAgIDxhY3Rpb24+VXNlciBBY2NlcHRhbmNlIFRlc3Q8L2FjdGlvbj4KICAgPGFjdGlvbj5SZWxlYXNlPC9hY3Rpb24+CjwvZGlhZ3JhbT4K</script>
+              type="text/xml;purpose=adl;base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGRpYWdyYW0geG1sbnM9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS9hZGwiCiAgICAgICAgIHhtbG5zOnhzbHQ9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS94c2x0IgogICAgICAgICBpZD0iZGlhIgogICAgICAgICBzdHlsZT0iLS1raXRlOS1taW4td2lkdGg6IDYwMHB0OyIKICAgICAgICAgeHNsdDp0ZW1wbGF0ZT0iL3B1YmxpYy90ZW1wbGF0ZXMvcmlzay1maXJzdC9yaXNrLWZpcnN0LXRlbXBsYXRlLnhzbCI+CiAgIDxjb250YWluZXIgYm9yZGVyZWQ9InRydWUiIGlkPSJjIj4KICAgICAgPHJpc2sgY2xhc3M9ImdvYWwiIGlkPSJpZF8wIj5GZWF0dXJlIFg8L3Jpc2s+CiAgICAgIDxsYWJlbCBpZD0iaWRfMTYiPgogICAgICAgIEludGVybmFsIE1vZGVsCiAgICAgICAgCiAgICAgIDwvbGFiZWw+CiAgIDwvY29udGFpbmVyPgogICA8YWN0aW9uPlNwZWNpZmljYXRpb248L2FjdGlvbj4KICAgPGFjdGlvbj5Db2RlIGFuZCBVbml0IFRlc3Q8L2FjdGlvbj4KICAgPGFjdGlvbj5JbnRlZ3JhdGlvbjwvYWN0aW9uPgogICA8YWN0aW9uPlVzZXIgQWNjZXB0YW5jZSBUZXN0PC9hY3Rpb24+CiAgIDxhY3Rpb24+UmVsZWFzZTwvYWN0aW9uPgo8L2RpYWdyYW0+Cg==</script>
    </defs>
    <g xmlns:xslt="http://www.kite9.org/schema/xslt"
       k9-contains="connected label"
       k9-texture="none"
-      k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: diagram; rect-pos: [0.0, 0.0]; rect-size: [1063.0, 331.0]; position: none; painter: direct-svg; "
+      style="--kite9-min-width: 600pt;"
+      k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [800.0000610351562 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: diagram; rect-pos: [0.0, 0.0]; rect-size: [1063.0, 331.0]; position: none; painter: direct-svg; "
       id="dia"
       k9-format="container"
       k9-ui="layout label fill size"
